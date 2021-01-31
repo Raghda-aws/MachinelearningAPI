@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/Raghda-aws/MachinelearningAPI.svg?style=svg)](https://circleci.com/gh/Raghda-aws/MachinelearningAPI)
+
 
 ## Project Overview
 
