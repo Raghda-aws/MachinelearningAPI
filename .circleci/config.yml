@@ -34,14 +34,13 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
             make install
-            # Install hadolint
+          # Install hadolint
             wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-            chmod 775 /bin/hadolint
+            chmod +x /bin/hadolint
       - save_cache:
           paths:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
-        
       # run tests!
       - run:
           name: run tests
